@@ -5,6 +5,13 @@ t.b.d.
 
 This project is still in its infancy.
 
+Installation
+------------
+
+At this stage installation from tarball is supported, only.
+
+    npm i https://github.com/mwittig/dumplicenses/archive/master.tar.gz -g
+
 Options
 -------
 
