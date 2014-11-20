@@ -1,0 +1,76 @@
+#!/usr/bin/env node
+
+var
+    package = require('../package.json'),
+    dumpLicenses = require('../lib/index.js').dumpLicenses,
+    checker = require('license-checker'),
+    path = require('path'),
+    fs = require('fs'),
+    mkdirp = require('mkdirp'),
+    nopt = require('nopt'),
+    noptUsage = require('nopt-usage'),
+    noptDefaults = require('nopt-defaults'),
+    knownOpts = {
+        json: path,
+        csv: path,
+        unknown: Boolean,
+        dependencies: Boolean,
+        start: String,
+        help: Boolean,
+        version: Boolean
+    },
+    shortHands = {
+        "h" : ["--help"],
+        "v" : ["--version"]
+    },
+    description = {
+        json: "export data as JSON to the given file. The path will be created if it does not exist.",
+        csv: "export data as comma-separated values to the given file. The path will be created if it does not exist.",
+        unknown: "show only licenses that can't be determined or have been guessed.",
+        dependencies: "show only third-party licenses, i.e., only list the dependencies defined in package.json.",
+        start: "path to the directory the license search should start from. If omitted the current working directory is assumed.",
+        help: "this help message and exit.",
+        version: "print version and exit."
+    },
+    defaults = {
+        start: process.cwd()
+    },
+    usage = noptUsage(knownOpts, shortHands, description),
+    parsedArgs = noptDefaults(nopt(knownOpts, shortHands, process.argv), defaults);
+
+
+if (parsedArgs.help) {
+    console.log('Usage: dumplicenses [options]');
+    console.log('Options:');
+    console.log(usage);
+}
+else if (parsedArgs.version) {
+    console.log(package.version);
+}
+else {
+    dumpLicenses(parsedArgs, function(json) {
+        var dir;
+        if (parsedArgs.json) {
+            dir = path.dirname(parsedArgs.json);
+            mkdirp.sync(dir);
+            fs.writeFileSync(parsedArgs.json, JSON.stringify(json, null, 4) + '\n', 'utf8');
+            console.log('file written', parsedArgs.json);
+        }
+        else if (parsedArgs.csv) {
+            dir = path.dirname(parsedArgs.csv);
+            mkdirp.sync(dir);
+            fs.writeFileSync(parsedArgs.csv, checker.asCSV(json), 'utf8');
+            console.log('file written', parsedArgs.csv);
+        }
+        else {
+            checker.print(json);
+        }
+        var nEntries = 0, key;
+        for (key in json) {
+            if (json.hasOwnProperty(key)) {
+                ++nEntries;
+            }
+        }
+        console.log("Number of entries found:", nEntries);
+    });
+}
