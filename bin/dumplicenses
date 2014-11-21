@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var
-    package = require('../package.json'),
+    packageDescriptor = require('../package.json'),
     dumpLicenses = require('../lib/index.js').dumpLicenses,
     checker = require('license-checker'),
     path = require('path'),
@@ -45,22 +45,25 @@ if (parsedArgs.help) {
     console.log(usage);
 }
 else if (parsedArgs.version) {
-    console.log(package.version);
+    console.log(packageDescriptor.version);
 }
 else {
     dumpLicenses(parsedArgs, function(json) {
         var dir;
-        if (parsedArgs.json) {
-            dir = path.dirname(parsedArgs.json);
-            mkdirp.sync(dir);
-            fs.writeFileSync(parsedArgs.json, JSON.stringify(json, null, 4) + '\n', 'utf8');
-            console.log('file written', parsedArgs.json);
-        }
-        else if (parsedArgs.csv) {
-            dir = path.dirname(parsedArgs.csv);
-            mkdirp.sync(dir);
-            fs.writeFileSync(parsedArgs.csv, checker.asCSV(json), 'utf8');
-            console.log('file written', parsedArgs.csv);
+        if (parsedArgs.json || parsedArgs.csv) {
+            // out put to file
+            if (parsedArgs.json) {
+                dir = path.dirname(parsedArgs.json);
+                mkdirp.sync(dir);
+                fs.writeFileSync(parsedArgs.json, JSON.stringify(json, null, 4) + '\n', 'utf8');
+                console.log('file written', parsedArgs.json);
+            }
+            if (parsedArgs.csv) {
+                dir = path.dirname(parsedArgs.csv);
+                mkdirp.sync(dir);
+                fs.writeFileSync(parsedArgs.csv, checker.asCSV(json), 'utf8');
+                console.log('file written', parsedArgs.csv);
+            }
         }
         else {
             checker.print(json);

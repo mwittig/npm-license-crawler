@@ -1,9 +1,12 @@
 Dump Licenses
 =============
 
-t.b.d.
+This project is still in its infancy. 
 
-This project is still in its infancy.
+Basically, Dump License is a wrapper around license-checker to analyze several modules (package.json files) as part 
+of your software project. This way, it is possible to create a list of third party licenses for your software project 
+in one go. File paths containing ".git" or "node_modules" are ignored at the stage where 'package.json' files are 
+matched to provide the entry points to calling license-checker. 
 
 Installation
 ------------
