@@ -35,3 +35,14 @@ Known Issues
 ------------
 
 * Using the tool on large directory trees is slow as the complete directory tree will be traversed.
+
+History
+-------
+
+* 20141120, V0.0.1
+    * Initial Version
+    
+* 20141121, V0.0.2
+    * Synced & merged license-checker fork with upstream
+    * Result is now sorted
+    * Fixed --dependencies option which only returned partial results
