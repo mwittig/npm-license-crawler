@@ -1,6 +1,6 @@
 {
   "name": "dumplicenses",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Dumps license information for multiple node.js modules (package.json files) as part of your software project.",
   "main": "./lib/index.js",
   "bin": {
@@ -15,9 +15,12 @@
     "nopt-defaults": "0.0.1",
     "license-checker": "git+https://github.com/mwittig/license-checker"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "vows": "*",
+    "istanbul": "*"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "istanbul cover --print both vows --"
   },
   "author": "Marcus Wittig",
   "license": "BSD"

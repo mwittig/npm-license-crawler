@@ -51,3 +51,19 @@ History
     * Implemented DirectoryReader replacing FileWalker to speed up the directory traversal and to add new functionality
     * Accepts a list of directory paths by using --start option multiple times
     * Added --exclude option to add one or multiple directory path to exclude from the search
+
+* 20141215, V0.0.4
+    * Added test skeleton and the basic mechanic to run tests and a coverage analysis
+    * Added travis build and info on build status as part of README
+    * Added TODO section
+
+Todo
+----
+
+* Write proper tests
+* Clarify the use of --unknown option. See also license-checker issue #29 <https://github.com/davglass/license-checker/issues/29>
+
+build status
+------------
+
+[![Build Status](https://travis-ci.org/mwittig/dumplicenses.png?branch=master)](https://travis-ci.org/mwittig/dumplicenses)
