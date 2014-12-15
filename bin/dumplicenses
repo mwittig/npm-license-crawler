@@ -15,7 +15,8 @@ var
         csv: path,
         unknown: Boolean,
         dependencies: Boolean,
-        start: String,
+        start: Array,
+        exclude: Array,
         help: Boolean,
         version: Boolean
     },
@@ -29,6 +30,7 @@ var
         unknown: "show only licenses that can't be determined or have been guessed.",
         dependencies: "show only third-party licenses, i.e., only list the dependencies defined in package.json.",
         start: "path to the directory the license search should start from. If omitted the current working directory is assumed.",
+        exclude: "path to a directory to be excluded (and its subdirectories) from the search.",
         help: "this help message and exit.",
         version: "print version and exit."
     },
@@ -43,6 +45,7 @@ if (parsedArgs.help) {
     console.log('Usage: dumplicenses [options]');
     console.log('Options:');
     console.log(usage);
+    console.log("Multiple use of the --start and --excluded options is allowed to provide a list of directory paths.");
 }
 else if (parsedArgs.version) {
     console.log(packageDescriptor.version);

@@ -1,13 +1,12 @@
 {
   "name": "dumplicenses",
-  "version": "0.0.2",
-  "description": "Dumps license info for all third party packages used in the project. Other than similar tools license-tools searches for package.json in sub-directories which do ot belong to installed packages. This way, it is possible to analyse project like ComX which contain several indepedent building blocks within the project directory tree.",
+  "version": "0.0.3",
+  "description": "Dumps license information for multiple node.js modules (package.json files) as part of your software project.",
   "main": "./lib/index.js",
   "bin": {
     "dumplicenses": "./bin/dumplicenses"
   },
   "dependencies": {
-    "filewalker": "^0.1.2",
     "jquery-extend": "~2.0.3",
     "async": "^0.9.0",
     "nopt": "^3.0.1",
