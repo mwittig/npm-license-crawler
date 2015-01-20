@@ -1,6 +1,6 @@
 {
   "name": "dumplicenses",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Dumps license information for multiple node.js modules (package.json files) as part of your software project.",
   "main": "./lib/index.js",
   "bin": {
@@ -12,7 +12,7 @@
     "nopt": "^3.0.1",
     "mkdirp": "^0.5.0",
     "nopt-usage": "^0.1.0",
-    "nopt-defaults": "0.0.1",
+    "nopt-defaults": "^0.0.1",
     "license-checker": "git+https://github.com/mwittig/license-checker"
   },
   "devDependencies": {

@@ -57,6 +57,13 @@ History
     * Added travis build and info on build status as part of README
     * Added TODO section
 
+* 20150115, V0.0.5
+    * Clarified use of --unknown option. See also license-checker issue #29 <https://github.com/davglass/license-checker/issues/29>
+    * Patched license-checker branch to fix --unknown error
+    * Added feature to output the parent path of dependencies for each module
+    * Fixed and extended normalization of the repository URL
+    * Add output of license URL where applicable
+
 Todo
 ----
 
