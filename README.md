@@ -1,17 +1,17 @@
-Dump Licenses
-=============
+NPM License Crawler
+===================
 
-Dump Licenses is a wrapper around [license-checker] (https://github.com/davglass/license-checker) to analyze
-several modules (package.json files) as part of your software project. This way, it is possible to create a list of 
-third party licenses for your software project in one go. File paths containing ".git" or "node_modules" are ignored 
+NPM License Crawler is a wrapper around [license-checker] (https://github.com/davglass/license-checker) to analyze
+several node packages (package.json files) as part of your software project. This way, it is possible to create a list
+of third party licenses for your software project in one go. File paths containing ".git" or "node_modules" are ignored
 at the stage where 'package.json' files are matched to provide the entry points to calling license-checker. 
 
 Installation
 ------------
 
-At this stage installation from tarball is supported, only.
+Use global installation to be able to run npm-license-crawler from the command line.
 
-    npm i https://github.com/mwittig/dumplicenses/archive/master.tar.gz -g
+    npm i npm-license-crawler -g
 
 Options
 -------
@@ -34,7 +34,7 @@ Options
 Example
 -------
 
-    dumplicenses  --exclude ./lib/logging --dependencies --csv licenses.csv
+    npm-license-crawler  --exclude ./lib/logging --dependencies --csv licenses.csv
 
 History
 -------
@@ -61,16 +61,22 @@ History
     * Clarified use of --unknown option. See also license-checker issue #29 <https://github.com/davglass/license-checker/issues/29>
     * Patched license-checker branch to fix --unknown error
     * Added feature to output the parent path of dependencies for each module
-    * Fixed and extended normalization of the repository URL
+    * Fixed and extended normalization of the repository URL. See also license-checker issue #30 <https://github.com/davglass/license-checker/issues/30>
     * Add output of license URL where applicable
+
+* 20150307, V0.0.6
+    * Renamed to npm-license-crawler
+    * Updated README
+    * Renamed binary
+    * npm publish
 
 Todo
 ----
 
 * Write proper tests
-* Clarify the use of --unknown option. See also license-checker issue #29 <https://github.com/davglass/license-checker/issues/29>
 
-build status
+
+Build Status
 ------------
 
-[![Build Status](https://travis-ci.org/mwittig/dumplicenses.png?branch=master)](https://travis-ci.org/mwittig/dumplicenses)
+[![Build Status](https://travis-ci.org/mwittig/npm-license-crawler.png?branch=master)](https://travis-ci.org/mwittig/npm-license-crawler)
