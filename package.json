@@ -4,7 +4,7 @@
   "description": "Analyzes license information for multiple node.js modules (package.json files) as part of your software project.",
   "main": "./lib/index.js",
   "bin": {
-    "dumplicenses": "./bin/npm-license-crawler"
+    "npm-license-crawler": "./bin/npm-license-crawler"
   },
   "dependencies": {
     "jquery-extend": "~2.0.3",
