@@ -10,7 +10,7 @@
     "jquery-extend": "~2.0.3",
     "async": "^0.9.0",
     "nopt": "^3.0.1",
-    "npm-license-crawler": "^0.5.0",
+    "mkdirp": "^0.5.0",
     "nopt-usage": "^0.1.0",
     "nopt-defaults": "^0.0.1",
     "license-checker": "git+https://github.com/mwittig/license-checker"
