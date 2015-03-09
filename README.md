@@ -1,7 +1,7 @@
 NPM License Crawler
 ===================
 
-NPM License Crawler is a wrapper around [license-checker] (https://github.com/davglass/license-checker) to analyze
+NPM License Crawler is a wrapper around [license-checker](https://github.com/davglass/license-checker) to analyze
 several node packages (package.json files) as part of your software project. This way, it is possible to create a list
 of third party licenses for your software project in one go. File paths containing ".git" or "node_modules" are ignored
 at the stage where 'package.json' files are matched to provide the entry points to calling license-checker. 
@@ -69,6 +69,10 @@ History
     * Updated README
     * Renamed binary
     * npm publish
+
+* 20150309, V0.0.7
+    * Extended package description
+    * Corrected link syntax in README
 
 Todo
 ----
