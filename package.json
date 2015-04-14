@@ -1,6 +1,6 @@
 {
   "name": "npm-license-crawler",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Analyzes license information for multiple node.js modules (package.json files) as part of your software project.",
   "main": "./lib/index.js",
   "bin": {

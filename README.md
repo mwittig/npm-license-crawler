@@ -74,6 +74,10 @@ History
     * Extended package description
     * Corrected link syntax in README
 
+* 20150414, V0.0.8
+    * Changed API of dumpLicenses() callback to improve programmatic use 
+    * Sorting and file output are nuw done as part of dumpLicenses()
+    
 Todo
 ----
 

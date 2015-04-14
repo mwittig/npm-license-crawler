@@ -5,8 +5,6 @@ var
     dumpLicenses = require('../lib/index.js').dumpLicenses,
     checker = require('license-checker'),
     path = require('path'),
-    fs = require('fs'),
-    mkdirp = require('mkdirp'),
     nopt = require('nopt'),
     noptUsage = require('nopt-usage'),
     noptDefaults = require('nopt-defaults'),
@@ -51,41 +49,7 @@ else if (parsedArgs.version) {
     console.log(packageDescriptor.version);
 }
 else {
-    var fileOutput = parsedArgs.json || parsedArgs.csv;
-
-    dumpLicenses(parsedArgs, function(json) {
-        var result = {};
-        Object.keys(json).sort().forEach(function(item) {
-            if (json[item]) {
-                result[item] = json[item];
-            }
-        });
-
-        var dir;
-        if (fileOutput) {
-            // out put to file
-            if (parsedArgs.json) {
-                dir = path.dirname(parsedArgs.json);
-                mkdirp.sync(dir);
-                fs.writeFileSync(parsedArgs.json, JSON.stringify(result, null, 4) + '\n', 'utf8');
-                console.log('file written', parsedArgs.json);
-            }
-            if (parsedArgs.csv) {
-                dir = path.dirname(parsedArgs.csv);
-                mkdirp.sync(dir);
-                fs.writeFileSync(parsedArgs.csv, checker.asCSV(result), 'utf8');
-                console.log('file written', parsedArgs.csv);
-            }
-        }
-        else {
-            checker.print(result);
-        }
-        var nEntries = 0, key;
-        for (key in result) {
-            if (result.hasOwnProperty(key)) {
-                ++nEntries;
-            }
-        }
-        console.log("Number of entries found:", nEntries);
+    dumpLicenses(parsedArgs, function(error, json) {
+        // intentionally left empty
     })
 }
