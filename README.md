@@ -1,6 +1,8 @@
 NPM License Crawler
 ===================
 
+[![npm version](https://badge.fury.io/js/npm-license-crawler.svg)](http://badge.fury.io/js/npm-license-crawler)
+
 NPM License Crawler is a wrapper around [license-checker](https://github.com/davglass/license-checker) to analyze
 several node packages (package.json files) as part of your software project. This way, it is possible to create a list
 of third party licenses for your software project in one go. File paths containing ".git" or "node_modules" are ignored
@@ -35,6 +37,30 @@ Example
 -------
 
     npm-license-crawler  --exclude ./lib/logging --dependencies --csv licenses.csv
+    
+Using npm-license-crawler programmatically
+------------------------------------------
+
+See the following example.
+
+    var crawler = require('npm-license-crawler'),
+        options = {
+            start: ['../..'],
+            exclude: ['.'],
+            json: 'licenses.json',
+            unknown: true
+        };
+    
+    crawler.dumpLicenses(options,
+        function(error, res){
+            if (error) {
+                console.error("Error:", error);
+            }
+            else {
+                console.dir(res);
+            }
+        }
+    );
 
 History
 -------
@@ -76,8 +102,13 @@ History
 
 * 20150414, V0.0.8
     * Changed API of dumpLicenses() callback to improve programmatic use 
-    * Sorting and file output are nuw done as part of dumpLicenses()
+    * Sorting and file output are now done as part of dumpLicenses()
     
+* 20150423, V0.0.9
+    * Updated dependencies
+    * Added version badge
+    * Added usage example
+
 Todo
 ----
 
