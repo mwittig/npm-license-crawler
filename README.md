@@ -108,6 +108,11 @@ History
     * Updated dependencies
     * Added version badge
     * Added usage example
+    
+* 20150810, V0.1.0
+    * Reset variables to allow for multiple calls of dumpLicenses function (thanks @Kienz)
+    * Revised license information to provide a SPDX 2.0 license identifier in-line with npm v2.1 guidelines on 
+      license metadata - see also https://github.com/npm/npm/releases/tag/v2.10.0
 
 Todo
 ----

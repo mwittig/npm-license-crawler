@@ -36,12 +36,7 @@
   "bugs": {
     "url": "http://github.com/mwittig/npm-license-crawler/issues"
   },
-  "licenses": [
-  {
-    "type": "BSD",
-    "url": "https://github.com/mwittig/npm-license-crawler/blob/master/LICENSE"
-  }
-  ],
+  "license": "BSD-3-Clause-Clear",
   "repository": {
     "type": "git",
     "url": "http://github.com/mwittig/npm-license-crawler.git"
