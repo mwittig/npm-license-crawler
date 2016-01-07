@@ -8,13 +8,14 @@
     "npm-license-crawler": "./bin/npm-license-crawler"
   },
   "dependencies": {
+    "async": "^1.5.1",
     "jquery-extend": "~2.0.3",
-    "async": "^1.0.0",
-    "nopt": "^3.0.2",
+    "license-checker": "git+https://github.com/mwittig/license-checker",
     "mkdirp": "^0.5.1",
-    "nopt-usage": "^0.1.0",
+    "nopt": "^3.0.2",
     "nopt-defaults": "^0.0.1",
-    "license-checker": "git+https://github.com/mwittig/license-checker"
+    "nopt-usage": "^0.1.0",
+    "treeify": "^1.0.1"
   },
   "devDependencies": {
     "vows": "*",
@@ -36,7 +37,7 @@
   "bugs": {
     "url": "http://github.com/mwittig/npm-license-crawler/issues"
   },
-  "license": "BSD-3-Clause-Clear",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "http://github.com/mwittig/npm-license-crawler.git"

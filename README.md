@@ -114,6 +114,11 @@ History
     * Revised license information to provide a SPDX 2.0 license identifier in-line with npm v2.1 guidelines on 
       license metadata - see also https://github.com/npm/npm/releases/tag/v2.10.0
 
+* 20150106, V0.1.1
+    * Added hidden option for gulp integration
+    * Added example file
+    * Corrected license info as part of package descriptor
+
 Todo
 ----
 
