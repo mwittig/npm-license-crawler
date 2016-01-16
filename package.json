@@ -1,6 +1,6 @@
 {
   "name": "npm-license-crawler",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/mwittig/npm-license-crawler",
   "description": "Analyzes license information for multiple node.js modules (package.json files) as part of your software project.",
   "main": "./lib/index.js",
