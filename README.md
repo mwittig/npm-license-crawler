@@ -118,6 +118,11 @@ History
     * Added hidden option for gulp integration
     * Added example file
     * Corrected license info as part of package descriptor
+    
+* 20150116, V0.1.2
+    * Changed line endings to LF for command wrapper on published files to resolve 
+      issue #2 for OS X users, thanks @swashcap and @uglow
+    * Added travis build descriptor
 
 Todo
 ----
