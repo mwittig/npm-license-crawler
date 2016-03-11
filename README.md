@@ -114,15 +114,18 @@ History
     * Revised license information to provide a SPDX 2.0 license identifier in-line with npm v2.1 guidelines on 
       license metadata - see also https://github.com/npm/npm/releases/tag/v2.10.0
 
-* 20150106, V0.1.1
+* 20160106, V0.1.1
     * Added hidden option for gulp integration
     * Added example file
     * Corrected license info as part of package descriptor
     
-* 20150116, V0.1.2
+* 20160116, V0.1.2
     * Changed line endings to LF for command wrapper on published files to resolve 
       issue #2 for OS X users, thanks @swashcap and @uglow
     * Added travis build descriptor
+
+* 20160311, V0.1.3
+    * Updated dependencies
 
 Todo
 ----
