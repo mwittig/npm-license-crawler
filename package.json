@@ -8,11 +8,11 @@
     "npm-license-crawler": "./bin/npm-license-crawler"
   },
   "dependencies": {
-    "async": "^1.5.1",
+    "async": "^1.5.2",
     "jquery-extend": "~2.0.3",
     "license-checker": "git+https://github.com/mwittig/license-checker",
     "mkdirp": "^0.5.1",
-    "nopt": "^3.0.2",
+    "nopt": "^3.0.6",
     "nopt-defaults": "^0.0.1",
     "nopt-usage": "^0.1.0",
     "treeify": "^1.0.1"
