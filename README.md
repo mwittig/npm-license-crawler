@@ -127,6 +127,9 @@ History
 * 20160311, V0.1.3
     * Updated dependencies
 
+* 20160419. V0.1.4
+    * Fixed CSV header line missing quotes for "license URL" column header, Issue #4
+
 Todo
 ----
 
