@@ -8,7 +8,7 @@
     "npm-license-crawler": "./bin/npm-license-crawler"
   },
   "dependencies": {
-    "async": "^1.5.2",
+    "async": "^2.0.1",
     "jquery-extend": "~2.0.3",
     "license-checker": "git+https://github.com/mwittig/license-checker#c87c31397328bd655c6567c5ec768759c06bd623",
     "mkdirp": "^0.5.1",
