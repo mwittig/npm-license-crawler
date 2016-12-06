@@ -11,7 +11,7 @@ at the stage where 'package.json' files are matched to provide the entry points 
 Contributions
 -------------
 
-If you like this npm-license-crawler, please consider &#x2605; starring 
+If you like npm-license-crawler, please consider &#x2605; starring 
 [the project on github](https://github.com/mwittig/npm-license-crawler). Contributions to the project are  welcome. 
 You can simply fork the project and create a pull request with your contribution to start with. 
 
