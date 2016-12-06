@@ -13,6 +13,7 @@ var
         csv: path,
         unknown: Boolean,
         dependencies: Boolean,
+        relativeLicensePath: Boolean,
         start: Array,
         exclude: Array,
         help: Boolean,
@@ -27,6 +28,7 @@ var
         csv: "export data as comma-separated values to the given file. The path will be created if it does not exist.",
         unknown: "show only licenses that can't be determined or have been guessed.",
         dependencies: "show only third-party licenses, i.e., only list the dependencies defined in package.json.",
+        relativeLicensePath: "output the relative file path for license files",
         start: "path to the directory the license search should start from. If omitted the current working directory is assumed.",
         exclude: "path to a directory to be excluded (and its subdirectories) from the search.",
         help: "this help message and exit.",
@@ -40,7 +42,7 @@ var
 
 
 if (parsedArgs.help) {
-    console.log('Usage: dumplicenses [options]');
+    console.log('Usage: npm-license-crawler [options]');
     console.log('Options:');
     console.log(usage);
     console.log("Multiple use of the --start and --excluded options is allowed to provide a list of directory paths.");
