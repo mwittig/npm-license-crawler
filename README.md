@@ -1,6 +1,8 @@
 NPM License Crawler
 ===================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mwittig/npm-license-crawler.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/npm-license-crawler.svg)](http://badge.fury.io/js/npm-license-crawler)
 
 NPM License Crawler is a wrapper around [license-checker](https://github.com/davglass/license-checker) to analyze
