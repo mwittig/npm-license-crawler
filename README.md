@@ -34,6 +34,8 @@ Options
 
 * `--dependencies`: show only third-party licenses, i.e., only list the dependencies defined in package.json.
 
+* `--onlyDirectDependencies`: show only direct dependencies licenses, i.e., don't list dependencies of dependencies.
+
 * `--relativeLicensePath`: output the relative file path for license files.
 
 * `--json /path/to/save.json`: export data as JSON to the given file. 
