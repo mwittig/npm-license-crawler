@@ -1,5 +1,10 @@
 # Release History
 
+* 20180219, V0.1.6
+    * Added option --onlyDirectDependencies to show only direct dependencies licenses, Issue #10 (thanks @elenabratanova)
+    * Added option --omitVersion to omit version numbers in output, Issue #14 (thanks @elenabratanova)
+    * Updated dependencies
+    
 * 20161206, V0.1.5
     * Added feature to output the relative license file path, Issue #8
     * Updated dependencies
