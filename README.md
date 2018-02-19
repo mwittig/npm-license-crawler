@@ -36,6 +36,8 @@ Options
 
 * `--onlyDirectDependencies`: show only direct dependencies licenses, i.e., don't list dependencies of dependencies.
 
+* `--omitVersion`: omit version numbers in result (e.g. "npm-license-crawler@0.1.5" becomes "npm-license-crawler")
+
 * `--relativeLicensePath`: output the relative file path for license files.
 
 * `--json /path/to/save.json`: export data as JSON to the given file. 
@@ -43,8 +45,6 @@ Options
 
 * `--csv /path/to/save.csv`: export the data as comma-separated values to the given file. 
     The path will be created if it does not exist.
-
-* `--omitVersion`: don't display versions in result (e.g. "npm-license-crawler@0.1.5" becomes "npm-license-crawler")
 
 Example
 -------
