@@ -8,14 +8,14 @@
     "npm-license-crawler": "./bin/npm-license-crawler"
   },
   "dependencies": {
-    "async": "^2.1.4",
+    "async": "^2.6.0",
     "jquery-extend": "~2.0.3",
-    "license-checker": "git+https://github.com/mwittig/license-checker#8d960c6e1487cd189e9436b492c923bd86cc5adc",
+    "license-checker": "git+https://github.com/mwittig/license-checker#d546e3f738e14c62e732346fa355162d46700893",
     "mkdirp": "^0.5.1",
     "nopt": "^3.0.6",
     "nopt-defaults": "^0.0.1",
     "nopt-usage": "^0.1.0",
-    "treeify": "^1.0.1"
+    "treeify": "^1.1.0"
   },
   "devDependencies": {
     "vows": "*",
