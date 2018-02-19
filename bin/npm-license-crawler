@@ -16,6 +16,8 @@ var
         relativeLicensePath: Boolean,
         start: Array,
         exclude: Array,
+        omitVersion: Boolean,
+        onlyDirectDependencies: Boolean,
         help: Boolean,
         version: Boolean
     },
@@ -31,6 +33,8 @@ var
         relativeLicensePath: "output the relative file path for license files",
         start: "path to the directory the license search should start from. If omitted the current working directory is assumed.",
         exclude: "path to a directory to be excluded (and its subdirectories) from the search.",
+        omitVersion: "omit version numbers in result (e.g. \"npm-license-crawler@0.1.5\" becomes \"npm-license-crawler\")",
+        onlyDirectDependencies: "show only direct dependencies licenses, i.e., don't list dependencies of dependencies",
         help: "this help message and exit.",
         version: "print version and exit."
     },
