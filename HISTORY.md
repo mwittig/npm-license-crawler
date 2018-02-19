@@ -1,5 +1,8 @@
 # Release History
-
+* 20180220, V0.1.7
+    * Added missing command line option handlers for --omitVersion and --onlyDirectDependencies
+    * Revised README
+    
 * 20180219, V0.1.6
     * Added option --onlyDirectDependencies to show only direct dependencies licenses, Issue #10 (thanks @elenabratanova)
     * Added option --omitVersion to omit version numbers in output, Issue #14 (thanks @elenabratanova)
