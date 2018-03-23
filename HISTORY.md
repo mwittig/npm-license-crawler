@@ -1,4 +1,8 @@
 # Release History
+
+* 2018022024, V0.1.8
+    * Fix for type error when using --onlyDirectDependencies on project with dependencies, issue #18 (thanks @DrGruby)
+    
 * 20180220, V0.1.7
     * Added missing command line option handlers for --omitVersion and --onlyDirectDependencies
     * Revised README
