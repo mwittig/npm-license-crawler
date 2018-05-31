@@ -1,6 +1,10 @@
 # Release History
 
-* 2018022024, V0.1.8
+* 20180531, V0.1.9
+    * Handle @-named dependencies properly with --onlyDirectDependencies, issue #20 (thanks @jamiemjennings)
+    * Updated dependencies
+
+* 20180224, V0.1.8
     * Fix for type error when using --onlyDirectDependencies on project with dependencies, issue #18 (thanks @DrGruby)
     
 * 20180220, V0.1.7
