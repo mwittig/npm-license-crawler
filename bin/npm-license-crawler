@@ -18,6 +18,8 @@ var
         exclude: Array,
         omitVersion: Boolean,
         onlyDirectDependencies: Boolean,
+        production: Boolean,
+        development: Boolean,
         help: Boolean,
         version: Boolean
     },
@@ -35,6 +37,8 @@ var
         exclude: "path to a directory to be excluded (and its subdirectories) from the search.",
         omitVersion: "omit version numbers in result (e.g. \"npm-license-crawler@0.1.5\" becomes \"npm-license-crawler\")",
         onlyDirectDependencies: "show only direct dependencies licenses, i.e., don't list dependencies of dependencies",
+        production: "show only production dependencies",
+        development: "show only development dependencies",
         help: "this help message and exit.",
         version: "print version and exit."
     },
