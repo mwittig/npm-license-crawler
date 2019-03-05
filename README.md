@@ -47,7 +47,10 @@ Options
 Example
 -------
 
-    npm-license-crawler  --exclude ./lib/logging --dependencies --csv licenses.csv
+Called from the `npm-license-crawler` installation directory. If called in another directory
+ make sure the given exclude path exists (or omit the `--exclude` option and argument).
+
+    npm-license-crawler  --exclude ./lib --dependencies --csv licenses.csv
     
 Using npm-license-crawler API
 -----------------------------
