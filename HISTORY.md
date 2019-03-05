@@ -1,21 +1,31 @@
 # Release History
 
+* 20190316, V0.2.0
+    * Notable changes: Now, npm-license-crawler will always terminate if an invalid 
+      `--exclude` path is provided. This is to provide a more consistent error behavior
+    * Revised error handling of the directory reader, issue #28
+    * Revised example given in README, issue #28
+    * Fixed option '--onlyDirectDependencies' always took the `dependencies`, even 
+      if the option `--development` was provided (thanks @Sly321)
+    * Added support for separation of production/development dependencies (thanks @elgohr)
+
 * 20180531, V0.1.9
-    * Handle @-named dependencies properly with --onlyDirectDependencies, issue #20 (thanks @jamiemjennings)
+    * Fixed splitting dependency package names on last `@`-sign rather than matching 
+      first one (thanks @jamiemjennings)
+
+* 20180308, V0.1.8
+    * Fixed type error in filter for '--onlyDirectDependencies' which occurred with invalid
+      package file without a proper `name` entry (thanks @Adam Jabłoński)
+       
+* 20180220, V0.1.7
+    * Fixed missing command line option handlers for --omitVersion and --onlyDirectDependencies
+    * Revised README 
+
+* 20180219, V0.1.6
+    * Added option '--onlyDirectDependencies': show only direct dependencies (thanks @elenabratanova)
+    * Added '--omitVersion' option: don't display version number in result (thanks @elenabratanova)
     * Updated dependencies
 
-* 20180224, V0.1.8
-    * Fix for type error when using --onlyDirectDependencies on project with dependencies, issue #18 (thanks @DrGruby)
-    
-* 20180220, V0.1.7
-    * Added missing command line option handlers for --omitVersion and --onlyDirectDependencies
-    * Revised README
-    
-* 20180219, V0.1.6
-    * Added option --onlyDirectDependencies to show only direct dependencies licenses, Issue #10 (thanks @elenabratanova)
-    * Added option --omitVersion to omit version numbers in output, Issue #14 (thanks @elenabratanova)
-    * Updated dependencies
-    
 * 20161206, V0.1.5
     * Added feature to output the relative license file path, Issue #8
     * Updated dependencies
