@@ -53,7 +53,7 @@ if (parsedArgs.help) {
     console.log('Usage: npm-license-crawler [options]');
     console.log('Options:');
     console.log(usage);
-    console.log("Multiple use of the --start and --excluded options is allowed to provide a list of directory paths.");
+    console.log("Multiple use of the --start and --exclude options is allowed to provide a list of directory paths.");
 }
 else if (parsedArgs.version) {
     console.log(packageDescriptor.version);
