@@ -2,6 +2,7 @@ NPM License Crawler
 ===================
 
 [![npm version](https://badge.fury.io/js/npm-license-crawler.svg)](http://badge.fury.io/js/npm-license-crawler)
+ [![Greenkeeper badge](https://badges.greenkeeper.io/mwittig/npm-license-crawler.svg)](https://greenkeeper.io/)
 
 NPM License Crawler is a wrapper around [license-checker](https://github.com/davglass/license-checker) to analyze
 several node packages (package.json files) as part of your software project. This way, it is possible to create a list
@@ -53,8 +54,11 @@ Options
 Example
 -------
 
-    npm-license-crawler  --exclude ./lib/logging --dependencies --csv licenses.csv
+Called from the `npm-license-crawler` installation directory. If called in another directory
+ make sure the given exclude path exists (or omit the `--exclude` option and argument).
 
+    npm-license-crawler  --exclude ./lib --dependencies --csv licenses.csv
+    
 Using npm-license-crawler API
 -----------------------------
 
