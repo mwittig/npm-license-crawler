@@ -43,7 +43,7 @@ Options
 
 * `--omitVersion`: omit version numbers in result (e.g. "npm-license-crawler@0.1.5" becomes "npm-license-crawler")
 
-* `--no-color`: don't show colors in the console output
+* `--no-color`: (or `--no-color`) don't show colors in the console output
 
 * `--relativeLicensePath`: output the relative file path for license files.
 
