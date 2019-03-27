@@ -1,13 +1,15 @@
 # Release History
 
+* 20190328, V0.2.1
+    * Added colorized output, PR #30 (thanks @erogleva - Elena Rogleva)
 * 20190316, V0.2.0
     * Notable changes: Now, npm-license-crawler will always terminate if an invalid 
       `--exclude` path is provided. This is to provide a more consistent error behavior
     * Revised error handling of the directory reader, issue #28
     * Revised example given in README, issue #28
     * Fixed option '--onlyDirectDependencies' always took the `dependencies`, even 
-      if the option `--development` was provided (thanks @Sly321)
-    * Added support for separation of production/development dependencies (thanks @elgohr)
+      if the option `--development` was provided (thanks @Sly321 - Sven Liebig)
+    * Added support for separation of production/development dependencies (thanks @elgohr - Lars Gohr)
 
 * 20180531, V0.1.9
     * Fixed splitting dependency package names on last `@`-sign rather than matching 
@@ -15,7 +17,7 @@
 
 * 20180308, V0.1.8
     * Fixed type error in filter for '--onlyDirectDependencies' which occurred with invalid
-      package file without a proper `name` entry (thanks @Adam Jabłoński)
+      package file without a proper `name` entry (thanks @dzablo - Adam Jabłoński)
        
 * 20180220, V0.1.7
     * Fixed missing command line option handlers for --omitVersion and --onlyDirectDependencies
