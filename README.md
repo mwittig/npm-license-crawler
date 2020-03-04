@@ -53,6 +53,8 @@ Options
 * `--csv /path/to/save.csv`: export the data as comma-separated values to the given file.
     The path will be created if it does not exist.
 
+* `--silent`: No console output
+
 Example
 -------
 
