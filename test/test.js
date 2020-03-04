@@ -13,7 +13,7 @@ var vows = require('vows'),
         },
         reader: {
             topic: function() {
-                var reader = new DirectoryReader(".."),
+                var reader = new DirectoryReader({ start: ".." }),
                     result = {
                         found: false,
                         dirs: 0,
